@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div aria-keyshortcuts="a" >
+<img src="G:\jogo\direita1.png" alt="" keydown="my">
+</div>
+<style>
+@keyframes animacao {
+1%{
+    bottom: 7px;
+}
+50%{
+    bottom: 77px;
+}
+100%{
+    bottom: 7px;
+}
+}
+.ani{
+    position: absolute;
+    border: 8px;
+    animation-name: animacao;
+    animation-duration: 1ms;
+    animation-iteration-count: infinite;
+}
+</style>
+
+    <script>
+        function my(){ 
+            my_game = document.getElementById("ji")
+            my_game.addEventListener("keydown",function(event){
+            if(event.key ==="a"){
+                my_game.classList.add("ani")
+            }else{
+                alert(9)
+            }
+        })}
+        
+    </script>
+    
+</body>
+</html>
